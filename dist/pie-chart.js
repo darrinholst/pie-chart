@@ -173,9 +173,9 @@ getTools: function(dimensions, options) {
   var pieLayout = d3.layout.pie()
     .value(function(d) { return d.value; });
 
-  if (options.mode === "gauge") {
+  //if (options.mode === "gauge") {
     pieLayout.sort(null);
-  }
+  //}
 
   return {pie: pieLayout, arc: arc};
 },
