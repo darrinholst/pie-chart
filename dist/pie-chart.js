@@ -90,11 +90,11 @@
         $scope.$watch('data', function(newValue, oldValue) {
           newValue = $utils.addDataForGauge(newValue, $scope.options);
 
-          if (svg) {
-            update(newValue, $scope.options);
-          } else {
+          //if (svg) {
+            //update(newValue, $scope.options);
+          //} else {
             forceUpdate(newValue, $scope.options);
-          }
+          //}
         }, true);
 
         $scope.$watch('options', function(newValue) {
